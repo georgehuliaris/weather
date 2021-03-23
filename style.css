@@ -73,4 +73,6 @@ span {
     justify-content: center;
     margin-left: 2rem;
 }
-
+ .search-box {
+     text-align: center;
+ }
