@@ -14,7 +14,7 @@ $(document).ready(function() {
     }
 
     function weather(lat, long) {
-        var URL = "https://api.openweathermap.org/data/2.5/weather?q=houston&appid=7d110956aa512dec539ae86b6c7a578f";
+        var URL = "https://api.openweathermap.org/data/2.5/weather?q=houston&appid=7d110956aa512dec539ae86b6c7a578f&units=imperial";
 
         $.getJSON(URL, function(data) { 
             console.log(data)
@@ -27,7 +27,9 @@ $(document).ready(function() {
         var city = data.name;
         var temp = Math.round(data.main.temp);
         var desc = data.weather[0].description;
-        var icon = data.weather[0].icon;
+        // var icon = data.weather[0].icon;
+        
+        let icon = document.querySelector('.weather-icon');
 
         $("#city").html(city)
         $("#temp").html(temp);
