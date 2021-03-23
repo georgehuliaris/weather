@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How's the Weather?!</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    
     <div class="container">
-        <div class="card">Where you at?
-            <img src="" alt="icon" id="icon">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Weather of what city?"/>
+            <div class="card">
+            <img src="icon" alt="icon" id="icon">
             <div class="degrees">
-                <h1 id="temp"> 75</h1>
+                <h1 id="temp"> </h1>
                 <span>&#176</span>
             </div>
-            <h3 id="description">Sunny</h3>
+            <h3 id="desc"></h3>
         </div>
+        </header>
     </div>
     <script src="./app.js"></script>
-    <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
+   
 </body>
 </html>

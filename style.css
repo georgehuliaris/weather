@@ -1,3 +1,21 @@
+.app-wrap {
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    background-color: rgb(190, 219, 248);
+}
+
 .container {
     align-self: center;
     max-width: max-content;
@@ -9,6 +27,7 @@
     grid-template-rows: 20% 80%;
     text-align: center;
     padding: 25px 5px;
+    background-color: rgb(115, 187, 247);
     
 }
 
@@ -33,7 +52,7 @@ span {
 }
 
 .card {
-    background: chartreuse;
+    background: rgb(133, 180, 235);
     font-style: italic;
     padding: 5px;
     margin: 5px 5px 5px 5px;
